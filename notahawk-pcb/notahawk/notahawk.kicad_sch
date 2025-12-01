@@ -7252,16 +7252,6 @@
 		)
 		(uuid "3c31a2ed-8480-495e-9d86-b71ca84c9c9a")
 	)
-	(label "ESP 3V3"
-		(at 166.37 53.34 180)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify right bottom)
-		)
-		(uuid "3fe9b336-afc6-4cf1-aefa-47e0ec59677e")
-	)
 	(label "ESP VDD_SPI"
 		(at 280.67 93.98 180)
 		(effects
@@ -11411,7 +11401,7 @@
 				)
 			)
 		)
-		(property "Value" "10"
+		(property "Value" "10 nF"
 			(at 201.93 36.322 90)
 			(effects
 				(font
