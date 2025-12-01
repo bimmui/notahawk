@@ -512,6 +512,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L_Small"
 			(pin_numbers
 				(hide yes)
@@ -4444,6 +4627,27 @@
 		)
 		(uuid "164b19f2-4aa8-445f-9b0e-131fb690c210")
 	)
+	(text_box "ESP Status"
+		(exclude_from_sim no)
+		(at 185.42 137.16 0)
+		(size 16.51 5.08)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 0 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1eab11e1-d4a5-4e02-89d7-b4af8f414942")
+	)
 	(text_box "Power and Boot Functionality"
 		(exclude_from_sim no)
 		(at 264.16 100.33 0)
@@ -4749,10 +4953,6 @@
 		(uuid "35956534-4771-4eb3-98b6-4a68e0d67bbd")
 	)
 	(no_connect
-		(at 99.06 173.99)
-		(uuid "3a0d3a6f-bdf9-4b69-aebd-51bc2f4e8fa0")
-	)
-	(no_connect
 		(at 33.02 80.01)
 		(uuid "42238686-ab0a-49a7-9f61-37f10147900e")
 	)
@@ -4924,13 +5124,23 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 111.76) (xy 269.24 116.84)
+			(xy 269.24 109.22) (xy 269.24 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0f657b1a-778b-4b71-85fa-32916d4590b4")
+	)
+	(wire
+		(pts
+			(xy 193.04 160.02) (xy 201.93 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f794321-a18f-4517-b7ac-0bdaf9337a32")
 	)
 	(wire
 		(pts
@@ -4962,6 +5172,16 @@
 		)
 		(uuid "11d54de4-844b-4948-8c56-18784de3ed8b")
 	)
+	(polyline
+		(pts
+			(xy 204.47 134.62) (xy 134.62 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1232d902-d6f6-421b-ac59-5146b66c9406")
+	)
 	(wire
 		(pts
 			(xy 200.66 86.36) (xy 207.01 86.36)
@@ -4984,6 +5204,16 @@
 	)
 	(polyline
 		(pts
+			(xy 134.62 163.83) (xy 204.47 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13a3ef2c-4a68-4f0d-ba9f-1f41a973b899")
+	)
+	(polyline
+		(pts
 			(xy 15.24 15.24) (xy 15.24 36.83)
 		)
 		(stroke
@@ -4991,6 +5221,16 @@
 			(type default)
 		)
 		(uuid "14905f9b-ab98-49f5-b695-ef74c9694a72")
+	)
+	(polyline
+		(pts
+			(xy 204.47 163.83) (xy 204.47 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15aef291-a1ce-416b-8055-8e723374089e")
 	)
 	(wire
 		(pts
@@ -5054,7 +5294,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 116.84) (xy 278.13 116.84)
+			(xy 269.24 114.3) (xy 278.13 114.3)
 		)
 		(stroke
 			(width 0)
@@ -5104,6 +5344,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 173.99) (xy 109.22 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ebabbe9-dc42-4819-a73c-f5d3137adcb3")
+	)
+	(wire
+		(pts
 			(xy 48.26 33.02) (xy 48.26 36.83)
 		)
 		(stroke
@@ -5131,6 +5381,16 @@
 			(type default)
 		)
 		(uuid "21db3ec4-e4df-487e-a309-0101e4714260")
+	)
+	(wire
+		(pts
+			(xy 144.78 144.78) (xy 154.94 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "229f341e-f4b7-4e72-8136-16ff69a60247")
 	)
 	(polyline
 		(pts
@@ -5294,6 +5554,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 160.02) (xy 193.04 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3458d87e-f263-459a-b9ce-5bcc0cbaf493")
+	)
+	(wire
+		(pts
 			(xy 243.84 26.67) (xy 248.92 26.67)
 		)
 		(stroke
@@ -5301,6 +5571,16 @@
 			(type default)
 		)
 		(uuid "34652823-bb89-44a9-be98-45ac580e6071")
+	)
+	(wire
+		(pts
+			(xy 170.18 144.78) (xy 172.72 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "352c0bb7-1c1c-49e5-b470-5610fb66937f")
 	)
 	(wire
 		(pts
@@ -5531,6 +5811,16 @@
 			(type default)
 		)
 		(uuid "54645379-baee-4a93-8dbc-348af37ceb13")
+	)
+	(wire
+		(pts
+			(xy 162.56 144.78) (xy 160.02 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "557bc7f6-e0fa-41be-a89b-896ced2f1ffa")
 	)
 	(wire
 		(pts
@@ -5914,6 +6204,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 157.48) (xy 190.5 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8889c6be-3b66-4375-b87d-89d5e8d9ad43")
+	)
+	(wire
+		(pts
 			(xy 132.08 97.79) (xy 142.24 97.79)
 		)
 		(stroke
@@ -6182,6 +6482,16 @@
 		)
 		(uuid "a8a5784b-2e82-48a4-aae4-c0657ae8d29d")
 	)
+	(polyline
+		(pts
+			(xy 134.62 134.62) (xy 134.62 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa3ca3a9-34e4-4c75-8c81-364d6515270d")
+	)
 	(wire
 		(pts
 			(xy 114.3 140.97) (xy 100.33 140.97)
@@ -6261,6 +6571,16 @@
 			(type default)
 		)
 		(uuid "bcaf6bec-f20b-41d5-9cdc-8ea14b06fa37")
+	)
+	(wire
+		(pts
+			(xy 182.88 157.48) (xy 177.8 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdf8821e-f864-4a19-9b37-87cda6abbd7f")
 	)
 	(wire
 		(pts
@@ -6912,6 +7232,16 @@
 		)
 		(uuid "39b4f1da-9a22-4b65-ad6e-241d2eb2bf09")
 	)
+	(label "ESP STATUS"
+		(at 109.22 173.99 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "3b8d28df-a648-4afc-a6d8-9a2165af3222")
+	)
 	(label "ESP VDDA"
 		(at 106.68 128.27 180)
 		(effects
@@ -7013,7 +7343,7 @@
 		(uuid "6f06cb18-31da-4256-894d-8386990a9550")
 	)
 	(label "ESP BOOT"
-		(at 278.13 116.84 180)
+		(at 278.13 114.3 180)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -7061,6 +7391,16 @@
 			(justify right bottom)
 		)
 		(uuid "88d98f2a-8aef-488e-a384-eab7452efb4a")
+	)
+	(label "ESP STATUS"
+		(at 144.78 144.78 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ffa21b6-7fe4-4b32-9d8a-b0ebb9b5db96")
 	)
 	(label "ESP MOSI"
 		(at 132.08 46.99 0)
@@ -7241,6 +7581,16 @@
 			(justify right bottom)
 		)
 		(uuid "fae5fb79-4102-4b29-ab72-3896ef8bef29")
+	)
+	(label "ESP BOOT"
+		(at 201.93 160.02 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "fe3b1985-8eb8-4356-837a-ce6b28bc2fd3")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7445,6 +7795,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 144.78 157.48 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0dabb3fc-f16d-4dfa-9c0d-3bd96bee9adb")
+		(property "Reference" "#PWR053"
+			(at 148.59 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 141.986 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 144.78 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ff24ed4-ce0a-45f5-8440-c49db9cbe8e2")
+		)
+		(instances
+			(project "notahawk"
+				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 275.59 125.73 90)
 		(unit 1)
@@ -7512,7 +7929,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 264.16 111.76 90)
+		(at 264.16 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7520,7 +7937,7 @@
 		(dnp no)
 		(uuid "0e8f307c-30d2-4ec7-9bc5-5b8a6a72cd5a")
 		(property "Reference" "#PWR050"
-			(at 267.97 111.76 0)
+			(at 267.97 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7529,7 +7946,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 261.366 111.76 90)
+			(at 261.366 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7538,7 +7955,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 111.76 0)
+			(at 264.16 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7547,7 +7964,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 111.76 0)
+			(at 264.16 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7556,7 +7973,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 264.16 111.76 0)
+			(at 264.16 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7705,6 +8122,73 @@
 			(project "notahawk"
 				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 157.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "126789a1-b8d8-4be9-bcce-241e4c5fab3d")
+		(property "Reference" "#PWR054"
+			(at 158.75 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 157.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bed090b8-b438-4103-9981-0941946dbe0d")
+		)
+		(instances
+			(project "notahawk"
+				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -7904,6 +8388,83 @@
 			(project ""
 				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 148.59 157.48 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1717c359-cbb1-4bb6-af38-c5edb68a413e")
+		(property "Reference" "D2"
+			(at 150.114 151.638 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "POWER LED"
+			(at 150.1775 153.67 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 148.59 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 148.59 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "20a3e6e0-509d-4af9-90be-2976806e7baf")
+		)
+		(pin "1"
+			(uuid "89798a89-d417-4c4d-a5f1-4ff7ad0fd941")
+		)
+		(instances
+			(project ""
+				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -8623,6 +9184,73 @@
 			(project "notahawk"
 				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 172.72 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33761413-ba3b-4a9c-bae6-9b8049cb3792")
+		(property "Reference" "#PWR055"
+			(at 179.07 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 144.7799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c9ce978-73cb-4e6f-b3c4-b514fe62b1cf")
+		)
+		(instances
+			(project "notahawk"
+				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -11640,6 +12268,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 186.69 157.48 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79de6b26-7d5a-42cc-b409-31c170993a02")
+		(property "Reference" "D3"
+			(at 186.69 152.654 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "BOOTLOADER LED"
+			(at 186.69 154.94 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 186.69 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 186.69 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ad9df131-3774-413e-a67b-5a1687d61d40")
+		)
+		(pin "1"
+			(uuid "550ca75e-87b8-41a5-8c0a-ce99cfefca28")
+		)
+		(instances
+			(project "notahawk"
+				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 176.53 54.61 90)
 		(unit 1)
@@ -12587,6 +13292,73 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 172.72 157.48 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9f6a1a7d-2438-42e5-b921-aa73548589d5")
+		(property "Reference" "#PWR056"
+			(at 176.53 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 169.926 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 172.72 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "680261fd-5543-48a1-a638-c28279614612")
+		)
+		(instances
+			(project "notahawk"
+				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 241.3 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13321,6 +14093,74 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
+		(at 175.26 157.48 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf5ee0ce-8885-45da-940e-2337a4c1f0f4")
+		(property "Reference" "R14"
+			(at 175.26 154.432 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 175.26 155.702 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 175.26 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5566dec-a5e0-4413-96e4-4cb3f075e1e2")
+		)
+		(pin "2"
+			(uuid "0e496d3d-16d1-4a0c-ad69-30ea191f21d7")
+		)
+		(instances
+			(project "notahawk"
+				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
 		(at 135.89 111.76 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13388,7 +14228,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 266.7 111.76 270)
+		(at 266.7 109.22 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13396,7 +14236,7 @@
 		(dnp no)
 		(uuid "cf15ea4a-8fa5-423f-96dd-26eb03269914")
 		(property "Reference" "R12"
-			(at 266.7 108.712 90)
+			(at 266.7 106.172 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -13404,7 +14244,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 266.7 109.982 90)
+			(at 266.7 107.442 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -13412,7 +14252,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 266.7 111.76 0)
+			(at 266.7 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13421,7 +14261,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 266.7 111.76 0)
+			(at 266.7 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13430,7 +14270,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 266.7 111.76 0)
+			(at 266.7 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13924,6 +14764,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 157.48 144.78 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd6d1951-c490-45fa-9ab1-716ac5bae5af")
+		(property "Reference" "R15"
+			(at 157.48 141.732 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 157.48 143.002 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 157.48 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03c1b754-0696-4ccc-9c52-50340c935e71")
+		)
+		(pin "2"
+			(uuid "3a255cf4-860d-4f24-8212-824d2004843e")
+		)
+		(instances
+			(project "notahawk"
+				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 24.13 92.71 0)
 		(mirror x)
@@ -14052,6 +14960,83 @@
 			(project "notahawk"
 				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 166.37 144.78 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "def2b9ed-6abb-4eb0-8932-736582661a0e")
+		(property "Reference" "D4"
+			(at 166.3065 139.954 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "STATUS LED"
+			(at 166.37 141.986 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 166.37 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 166.37 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d9bdaf5e-fefb-495a-b27f-bbf92b83a37d")
+		)
+		(pin "1"
+			(uuid "96b6cf2c-2364-4346-89f4-deae393d8db7")
+		)
+		(instances
+			(project "notahawk"
+				(path "/e5a5ffe3-9e02-414f-8ec2-e17dec5015ee"
+					(reference "D4")
 					(unit 1)
 				)
 			)
