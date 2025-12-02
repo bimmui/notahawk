@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "burner")(type "KiCad")(uri "C:/Users/danie/Documents/KiCad/9.0/footprints/burner.pretty")(options "")(descr ""))
+)
