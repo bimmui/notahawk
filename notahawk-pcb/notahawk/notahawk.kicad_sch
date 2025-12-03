@@ -14849,7 +14849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "burner:SW_DS04-254-2-01BK-SMT"
+		(property "Footprint" "switches_additional:SW_DS04-254-2-01BK-SMT"
 			(at 246.38 33.02 0)
 			(effects
 				(font
@@ -15262,7 +15262,7 @@
 				)
 			)
 		)
-		(property "Footprint" "burner:INDC1005X55N"
+		(property "Footprint" "inductor_additional:INDC1005X55N"
 			(at 269.24 148.59 0)
 			(effects
 				(font
