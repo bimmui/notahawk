@@ -8146,7 +8146,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 135.89 105.41 0)
 			(effects
 				(font
@@ -8213,7 +8213,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 31.75 166.37 0)
 			(effects
 				(font
@@ -8479,7 +8479,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 96.52 90.17 0)
 			(effects
 				(font
@@ -8547,7 +8547,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 148.59 157.48 0)
 			(effects
 				(font
@@ -8757,7 +8757,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 240.03 107.95 0)
 			(effects
 				(font
@@ -8816,7 +8816,7 @@
 				)
 			)
 		)
-		(property "Value" "Reset button"
+		(property "Value" "Bootloader button"
 			(at 269.24 121.666 0)
 			(effects
 				(font
@@ -8824,7 +8824,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "switches_additional:SW_TS02-66-50-BK-100-LCR-D"
 			(at 269.24 120.65 0)
 			(effects
 				(font
@@ -8957,7 +8957,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 43.18 33.02 0)
 			(effects
 				(font
@@ -9025,7 +9025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECS-TXO-2520-33-400-AN-TR:OSC_ECS-TXO-2520-33-400-AN-TR"
+		(property "Footprint" "crystals_additional:OSC_ECS-TXO-2520-33-400-AN-TR"
 			(at 246.38 151.13 0)
 			(effects
 				(font
@@ -9409,7 +9409,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 33.02 44.45 0)
 			(effects
 				(font
@@ -9477,7 +9477,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 222.25 144.78 0)
 			(effects
 				(font
@@ -9545,7 +9545,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BNO085:IC_BNO085"
+		(property "Footprint" "sensor_motion_additional:IC_BNO085"
 			(at 63.5 82.55 0)
 			(effects
 				(font
@@ -9811,7 +9811,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 29.21 82.55 0)
 			(effects
 				(font
@@ -10014,7 +10014,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 238.76 115.57 0)
 			(effects
 				(font
@@ -10082,7 +10082,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ESP32-C3:QFN50P500X500X90-33N"
+		(property "Footprint" "microcontrollers_additional:QFN50P500X500X90-33N"
 			(at 71.12 158.75 0)
 			(effects
 				(font
@@ -10364,7 +10364,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BMP581:BMP581"
+		(property "Footprint" "sensor_pressure_additional:BMP581"
 			(at 62.23 36.83 0)
 			(effects
 				(font
@@ -11146,7 +11146,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 181.61 26.67 0)
 			(effects
 				(font
@@ -11280,7 +11280,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 265.43 73.66 0)
 			(effects
 				(font
@@ -11347,7 +11347,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 191.77 27.94 0)
 			(effects
 				(font
@@ -11748,7 +11748,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 243.84 82.55 0)
 			(effects
 				(font
@@ -12148,7 +12148,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ADXL372BCCZ-RL7:PQFN50P322X300X114-16N"
+		(property "Footprint" "sensor_motion_additional:PQFN50P322X300X114-16N"
 			(at 158.75 44.45 0)
 			(effects
 				(font
@@ -12353,7 +12353,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 104.14 58.42 0)
 			(effects
 				(font
@@ -12421,7 +12421,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 186.69 157.48 0)
 			(effects
 				(font
@@ -12632,7 +12632,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 35.56 149.86 0)
 			(effects
 				(font
@@ -12700,7 +12700,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 35.56 158.75 0)
 			(effects
 				(font
@@ -12834,7 +12834,7 @@
 				)
 			)
 		)
-		(property "Footprint" "W25Q128JVSIQ:SOIC127P790X216-8N"
+		(property "Footprint" "flash_memory_additional:SOIC127P790X216-8N"
 			(at 170.18 95.25 0)
 			(effects
 				(font
@@ -13041,7 +13041,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 265.43 82.55 0)
 			(effects
 				(font
@@ -13310,7 +13310,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 104.14 151.13 0)
 			(effects
 				(font
@@ -13576,7 +13576,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "switches_additional:SW_TS02-66-50-BK-100-LCR-D"
 			(at 240.03 120.65 0)
 			(effects
 				(font
@@ -13709,7 +13709,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 223.52 153.67 0)
 			(effects
 				(font
@@ -13844,7 +13844,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 140.97 0)
 			(effects
 				(font
@@ -14043,7 +14043,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 243.84 91.44 0)
 			(effects
 				(font
@@ -14177,7 +14177,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 204.47 78.74 0)
 			(effects
 				(font
@@ -14245,7 +14245,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 175.26 157.48 0)
 			(effects
 				(font
@@ -14312,7 +14312,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 135.89 111.76 0)
 			(effects
 				(font
@@ -14379,7 +14379,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 266.7 109.22 0)
 			(effects
 				(font
@@ -14447,7 +14447,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TSR_1-2433SM:CONV_TSR_1-2433SM"
+		(property "Footprint" "regulators:CONV_TSR_1-2433SM"
 			(at 252.73 50.8 0)
 			(effects
 				(font
@@ -14647,7 +14647,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 104.14 72.39 0)
 			(effects
 				(font
@@ -14916,7 +14916,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 200.66 110.49 0)
 			(effects
 				(font
@@ -14984,7 +14984,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 157.48 144.78 0)
 			(effects
 				(font
@@ -15186,7 +15186,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 166.37 144.78 0)
 			(effects
 				(font
@@ -15330,7 +15330,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 245.11 73.66 0)
 			(effects
 				(font
@@ -15465,7 +15465,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 184.15 41.91 0)
 			(effects
 				(font
@@ -15742,7 +15742,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 267.97 91.44 0)
 			(effects
 				(font
@@ -15875,7 +15875,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 29.21 91.44 0)
 			(effects
 				(font
